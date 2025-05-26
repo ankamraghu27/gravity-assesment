@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Copy app files to web server folder (update path if needed)
-                sh 'sudo cp -r * /var/www/html/'
+                sh 'sudo cp -r * /usr/share/nginx/html/'
                 // Restart nginx to serve the new app
                 sh 'sudo systemctl restart nginx'
             }
