@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/YOUR_GITHUB_USERNAME/simple-web-app.git', branch: 'main'
+                git url: 'https://github.com/ankamraghu27/gravity-assesment.git', branch: 'main'
             }
         }
 
